@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Righteous&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container-main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d1a30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lado esquedo da página */
+.left-side {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 65px;
+}
+
+.left-image {
+    width: 30vw;
+}
+
+.left-side > h1 {
+    font-weight: 800;
+    color:rgb(40, 231, 190);
+    font-size: 40px;
+    font-family: 'Lora', serif;
+}
+
+/* Lado direito da página */
+.right-side {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lora', serif;
+}
+
+.right-side p {
+    color:#fff;
+    text-align: center;
+}
+
+.right-side a{
+    color:rgb(35, 218, 126);
+    text-decoration: none;
+}
+
+.right-side a:hover {
+    color:rgb(106, 233, 169);
+}
+
+.box-login > h1 {
+    color: rgb(35, 218, 126); 
+    font-weight: 800px;
+    margin: 0;
+}
+
+.box-login {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #302b50;
+    
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+/* Parte direita da página: formulário de login */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 7px;
+}
+
+.inputs > label {
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.inputs > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #57517c;
+    padding: 15px;
+    font-size: 12px;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.inputs > ::placeholder {
+    color: #f1f0f0;
+}
+
+.botao {
+    border: none;
+    width: 100%;
+    padding: 16px 0px;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    background-color: rgb(35, 218, 126);
+    margin: 25px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    color: #2b134b;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.botao:hover {
+    background-color: rgba(14, 221, 117, 0.815);
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 950px){
+    .right-side{
+        width: 85%
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .container-main{
+        flex-direction: column;
+    }
+
+    .left-side > h1{
+        display: none;
+    }
+
+    .left-side{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-side{
+        width: 100%;
+        height: auto;
+    }
+}
